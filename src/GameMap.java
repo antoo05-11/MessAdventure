@@ -14,6 +14,7 @@ public class GameMap {
     int widthTile;
     int heightTile;
     List<Entity> movingObject = new ArrayList<>();
+
     public GameMap() {
         readMapFromFile();
         collision = new Collision(this);
@@ -33,7 +34,7 @@ public class GameMap {
         heightTile = Integer.parseInt(scanner.nextLine());
         entities = new Entity[widthTile][heightTile];
 
-        movingObject.add(new Player(Sprite.player_right_1, Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine()), this));
+        movingObject.add( new Player(this, Sprite.player_right_1, Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine())));
 
         for(int row = 0; row < heightTile; row ++) {
             String line = scanner.nextLine();
@@ -44,12 +45,11 @@ public class GameMap {
                         entities[column][row] = null;
                         break;
                     case "1":
-                        entities[column][row] = new Entity(Sprite.wall, column, row) {
-                            @Override
-                            public void update() {
-
-                            }
-                        };
+                        entities[column][row] = new Wall(this, Sprite.wall, column, row);
+                        break;
+                    case "-2":
+                        entities[column][row] = new MysteryBox(this, Sprite.wall, column, row, false);
+                        movingObject.add(entities[column][row]);
                         break;
                 }
             }
@@ -70,7 +70,8 @@ public class GameMap {
             }
         }
         for(Entity i : movingObject) {
-            i.render(gc);
+            if(i instanceof Player) i.render(gc);
+            else if(entities[i.getTopLeft().getX()/Sprite.SCALE_SIZE][i.getTopLeft().getY()/Sprite.SCALE_SIZE] != null) i.render(gc);
         }
     }
     public void update() {

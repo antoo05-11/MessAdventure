@@ -10,16 +10,14 @@ public class Player extends Entity {
     public static final int WIDTH = 32;
     Set<KeyCode> keySet = new HashSet<>();
     KeyCode latestKeyCode = null;
-    GameMap gameMap;
 
     int heightLand = 0;
     int heightJump = 40;
     private AtomicInteger indexOfSprite = new AtomicInteger(0);
     private AtomicInteger counter = new AtomicInteger(0);
 
-    public Player(Sprite sprite, int xTile, int yTile, GameMap gameMap) {
-        super(sprite, xTile, yTile);
-        this.gameMap = gameMap;
+    public Player(GameMap gameMap, Sprite sprite, int xTile, int yTile) {
+        super(gameMap, sprite, xTile, yTile);
     }
 
     /**

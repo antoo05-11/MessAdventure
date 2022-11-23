@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9824a78a-70af-4ea8-a368-7da214919ca2" name="Changes" comment="Update player motion.">
-      <change afterPath="$PROJECT_DIR$/src/Collision.java" afterDir="false" />
+    <list default="true" id="9824a78a-70af-4ea8-a368-7da214919ca2" name="Changes" comment="Add Collision for player.">
+      <change afterPath="$PROJECT_DIR$/src/MysteryBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
@@ -79,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669216475403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Collision for player.">
+      <created>1669219513814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669219513814</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Read map from file" />
     <MESSAGE value="Update player motion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update player motion." />
+    <MESSAGE value="Add Collision for player." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Collision for player." />
   </component>
 </project>

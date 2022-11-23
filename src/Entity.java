@@ -4,12 +4,11 @@ import javafx.scene.image.Image;
 public abstract class Entity {
     protected Point topLeft;
     private Image image;
-
-
-    public Entity(Sprite sprite, int xTile, int yTile) {
+    protected GameMap gameMap;
+    public Entity(GameMap gameMap, Sprite sprite, int xTile, int yTile) {
+        this.gameMap = gameMap;
         this.image = sprite.getImage();
         topLeft = new Point(xTile * Sprite.SCALE_SIZE, yTile * Sprite.SCALE_SIZE);
-
     }
 
     public Point getTopLeft() {
