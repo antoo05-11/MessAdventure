@@ -1,5 +1,15 @@
-public class Main {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class Main extends Application {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Application.launch(Main.class);
     }
+
+    @Override
+    public void start(Stage primaryStage) {
+        GameController.getGameController(primaryStage).run();
+    }
+
+
 }
