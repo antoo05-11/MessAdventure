@@ -9,12 +9,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class GameMap {
+    private Collision collision;
     Entity[][] entities;
     int widthTile;
     int heightTile;
     List<Entity> movingObject = new ArrayList<>();
     public GameMap() {
         readMapFromFile();
+        collision = new Collision(this);
     }
     public void readMapFromFile() {
         File file = new File("res/map.txt");
@@ -52,6 +54,10 @@ public class GameMap {
                 }
             }
         }
+    }
+
+    public Collision getCollision() {
+        return collision;
     }
 
     public void render(GraphicsContext gc) {
