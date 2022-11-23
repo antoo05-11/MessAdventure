@@ -31,7 +31,7 @@ public class GameMap {
         heightTile = Integer.parseInt(scanner.nextLine());
         entities = new Entity[widthTile][heightTile];
 
-        movingObject.add(new Player(Sprite.wall, Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine()), this));
+        movingObject.add(new Player(Sprite.player_right_1, Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine()), this));
 
         for(int row = 0; row < heightTile; row ++) {
             String line = scanner.nextLine();

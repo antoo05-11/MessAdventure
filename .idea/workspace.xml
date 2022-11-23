@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9824a78a-70af-4ea8-a368-7da214919ca2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/abc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sprite.java" afterDir="false" />
+    <list default="true" id="9824a78a-70af-4ea8-a368-7da214919ca2" name="Changes" comment="Read map from file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessAdventure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MessAdventure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/7d595a64c99a634d94759de8096cca14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/abc.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/abc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/player_down_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/untitled.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/res/untitled.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669181476260</updated>
     </task>
+    <task id="LOCAL-00001" summary="Read map from file">
+      <created>1669206693575</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669206693575</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Read map from file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read map from file" />
   </component>
 </project>

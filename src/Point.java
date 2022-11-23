@@ -35,6 +35,11 @@ public class Point implements Cloneable {
     }
 
     @Override
+    public String toString() {
+        return String.format("(%d,%d)", x,y);
+    }
+
+    @Override
     public Point clone() {
         try {
             Point clone = (Point) super.clone();

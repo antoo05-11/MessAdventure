@@ -15,11 +15,7 @@ public abstract class Entity {
     public Point getTopLeft() {
         return topLeft;
     }
-    public Point getDownLeft() {
-        Point downLeft = topLeft.clone();
-        downLeft.translate(Config.MovingStatus.DOWN, Sprite.SCALE_SIZE);
-        return downLeft;
-    }
+
 
     public void setImage(Sprite sprite) {
         this.image = sprite.getImage();
@@ -28,5 +24,6 @@ public abstract class Entity {
     public void render(GraphicsContext gc) {
         gc.drawImage(image, topLeft.getX() - GameMap.getDx_gc(), topLeft.getY() - GameMap.getDy_gc());
     }
+
     public abstract void update();
 }
